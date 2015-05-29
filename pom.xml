@@ -13,6 +13,7 @@
     <version>0.2-h-1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Hudson Dry Run Library</name>
+    <url>http://hudson-ci.org/</url>
 
     <licenses>
         <license>
@@ -48,5 +49,24 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+          <snapshotRepository>
+              <id>sonatype-nexus-snapshots</id>
+              <name>Sonatype Nexus Snapshots</name>
+              <url>${sonatypeOssDistMgmtSnapshotsUrl}</url>
+          </snapshotRepository>
+          <repository>
+              <id>sonatype-nexus-staging</id>
+              <name>Nexus Staging Repository</name>
+              <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+          </repository>
+    </distributionManagement>
+
+    <scm>
+        <connection>scm:git:git://github.com/hudson3-plugins/${project.artifactId}.git</connection>
+        <developerConnection>scm:git:git@github.com:hudson3-plugins/${project.artifactId}.git</developerConnection>
+        <url>https://github.com/hudson3-plugins/${project.artifactId}</url>
+    </scm>
 
 </project>
