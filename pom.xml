@@ -10,7 +10,7 @@
 
     <groupId>org.hudsonci.plugins</groupId>
     <artifactId>dry-run-lib</artifactId>
-    <version>0.2-h-1-SNAPSHOT</version>
+    <version>0.2-h-1</version>
     <packaging>jar</packaging>
     <name>Hudson Dry Run Library</name>
     <url>http://hudson-ci.org/</url>
